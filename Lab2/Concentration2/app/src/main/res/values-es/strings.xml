@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Concentacion</string>
+    <string name="title_activity_main">Concentrese</string>
+    <string name="About">Acerca de</string>
+    <string name="addPlayer">Añadir</string>
+    <string name="play">Jugar</string>
+    <string name="startGame">Inicar!</string>
+    <string name="Reset">Reiniciar</string>
+    <string name="title_activity_game">Juego</string>
+    <string name="title_activity_get_players">Concentrese</string>
+    <string name="title_activity_game_board">Concentrese</string>
+    <string name="title_activity_winner">Concentrese</string>
+</resources>
