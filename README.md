@@ -1,3 +1,3 @@
 # AgentesMoviles
 
-Sebastian Lozano Herrera - Felipe Rojas Hernandez
+Sebastian Lozano Herrera.
