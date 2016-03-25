@@ -22,4 +22,9 @@
         android:layout_below="@+id/tittle"
         android:id="@android:id/list"
         android:layout_height="wrap_content"></ListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/list"
+        android:onClick="selectImage"/>
 </RelativeLayout>

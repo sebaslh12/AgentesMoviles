@@ -1,19 +1,23 @@
 package com.proyecto1.moviles.proyecto;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
-import Model.GetContactsService;
-import Model.GetMessagesService;
+import Model.Services.GetContactsService;
+import Model.Services.GetMessagesService;
+import Model.Services.PostMessageService;
 
 public class MainActivity  extends ListActivity {
+    private int PICK_IMAGE_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +26,7 @@ public class MainActivity  extends ListActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         try {
-            ArrayList<String> consulta = new GetMessagesService().execute("1","2").get();
+            ArrayList<String> consulta = new GetContactsService().execute("3").get();
             ArrayAdapter<String> dataArray= new ArrayAdapter<String>(this,R.layout.contact_view, consulta);
             this.setListAdapter(dataArray);
 
@@ -34,6 +38,13 @@ public class MainActivity  extends ListActivity {
 
 
 
+    }
+
+    public void selectImage(View v){
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
     }
 
     @Override
