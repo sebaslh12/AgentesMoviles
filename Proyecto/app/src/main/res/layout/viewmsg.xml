@@ -15,8 +15,6 @@
     <ListView
         android:layout_below="@+id/toolbar"
         android:layout_width="wrap_content"
-        android:id="@+id/list"
-        android:divider="#b5b5b5"
-        android:dividerHeight="1dp"
+        android:id="@+id/historial"
         android:layout_height="wrap_content"></ListView>
 </RelativeLayout>

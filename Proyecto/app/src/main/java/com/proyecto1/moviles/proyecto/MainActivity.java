@@ -1,5 +1,6 @@
 package com.proyecto1.moviles.proyecto;
 
+import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,17 +8,24 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 import Model.Services.GetContactsService;
-import Model.Services.GetMessagesService;
-import Model.Services.PostMessageService;
+import Model.listCustom;
 
-public class MainActivity  extends ListActivity {
-    private int PICK_IMAGE_REQUEST = 1;
+public class MainActivity extends Activity {
+
+    ListView listaContactos;
+    Button msg;
+    Button files;
+    Integer[] imagenes = {R.drawable.user};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +34,23 @@ public class MainActivity  extends ListActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         try {
-            ArrayList<String> consulta = new GetContactsService().execute("3").get();
-            ArrayAdapter<String> dataArray= new ArrayAdapter<String>(this,R.layout.contact_view, consulta);
-            this.setListAdapter(dataArray);
+            final ArrayList<String> consulta = new GetContactsService().execute("3").get();
+            //ArrayAdapter<String> dataArray= new ArrayAdapter<String>(this,R.layout.contact_view, consulta);
+            //this.setListAdapter(dataArray);
+
+            listCustom adapter = new listCustom(MainActivity.this, consulta, imagenes);
+            listaContactos=(ListView)findViewById(R.id.list);
+            listaContactos.setAdapter(adapter);
+
+
+            listaContactos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Toast.makeText(MainActivity.this, "Escogio " + position, Toast.LENGTH_SHORT).show();
+                }
+
+            });
 
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -38,13 +60,6 @@ public class MainActivity  extends ListActivity {
 
 
 
-    }
-
-    public void selectImage(View v){
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
     }
 
     @Override
@@ -68,4 +83,14 @@ public class MainActivity  extends ListActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /** llamado cuando el usuario selecciona el boton de mensaje */
+    public void viewMessage(View view) {
+        View parentRow = (View) view.getParent();
+        final int position = listaContactos.getPositionForView(parentRow);
+        Toast.makeText(MainActivity.this, "Escogio "+position , Toast.LENGTH_SHORT).show();
+
+    }
+
+
 }
