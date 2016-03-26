@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
                 listaContactos=(ListView)findViewById(R.id.list);
                 listaContactos.setAdapter(adapter);
             }else {
-                Toast.makeText(MainActivity.this, "No hay contactos" , Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Usted no tiene contactos" , Toast.LENGTH_SHORT).show();
             }
 
         } catch (InterruptedException e) {
@@ -56,9 +56,6 @@ public class MainActivity extends Activity {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-
-
-
     }
 
     @Override
@@ -96,7 +93,6 @@ public class MainActivity extends Activity {
 
         View parentRow = (View) view.getParent();
         final int position = listaContactos.getPositionForView(parentRow);
-        Toast.makeText(MainActivity.this, "Escogio "+position , Toast.LENGTH_SHORT).show();
         Intent filesIntent = new Intent(this,Files_View.class);
         filesIntent.putExtra("idUser",consulta.get(position).getUserId());
         startActivity(filesIntent);

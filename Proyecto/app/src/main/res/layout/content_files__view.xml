@@ -11,10 +11,28 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Files_View"
     tools:showIn="@layout/activity_files__view">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/title"
+        android:textSize="10pt"
+        android:text="@string/title_activity_files__view"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
     <ListView
         android:layout_width="wrap_content"
-        android:layout_below="@+id/toolbar"
+        android:layout_below="@+id/title"
         android:id="@android:id/list"
         android:layout_height="wrap_content"></ListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/list"
+        android:onClick="uploadImage"
+        android:text="Compartir Imagen"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
