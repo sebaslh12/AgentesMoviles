@@ -17,6 +17,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
+import Model.ResultUser;
 import Model.Services.GetContactsService;
 import Model.listCustom;
 
@@ -26,6 +27,7 @@ public class MainActivity extends Activity {
     Button msg;
     Button files;
     Integer[] imagenes = {R.drawable.user};
+    ArrayList<ResultUser> consulta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,23 +36,20 @@ public class MainActivity extends Activity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         try {
-            final ArrayList<String> consulta = new GetContactsService().execute("3").get();
+             consulta = new GetContactsService().execute("3").get();
             //ArrayAdapter<String> dataArray= new ArrayAdapter<String>(this,R.layout.contact_view, consulta);
             //this.setListAdapter(dataArray);
-
-            listCustom adapter = new listCustom(MainActivity.this, consulta, imagenes);
-            listaContactos=(ListView)findViewById(R.id.list);
-            listaContactos.setAdapter(adapter);
-
-
-            listaContactos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Toast.makeText(MainActivity.this, "Escogio " + position, Toast.LENGTH_SHORT).show();
+            ArrayList<String> result = new ArrayList<String>();
+            if(!consulta.isEmpty()){
+                for(ResultUser f : consulta){
+                    result.add(f.getNombre()+" "+f.getUserName());
                 }
-
-            });
+                listCustom adapter = new listCustom(MainActivity.this, result, imagenes);
+                listaContactos=(ListView)findViewById(R.id.list);
+                listaContactos.setAdapter(adapter);
+            }else {
+                Toast.makeText(MainActivity.this, "No hay contactos" , Toast.LENGTH_SHORT).show();
+            }
 
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -93,4 +92,13 @@ public class MainActivity extends Activity {
     }
 
 
+    public void viewFiles(View view) {
+
+        View parentRow = (View) view.getParent();
+        final int position = listaContactos.getPositionForView(parentRow);
+        Toast.makeText(MainActivity.this, "Escogio "+position , Toast.LENGTH_SHORT).show();
+        Intent filesIntent = new Intent(this,Files_View.class);
+        filesIntent.putExtra("idUser",consulta.get(position).getUserId());
+        startActivity(filesIntent);
+    }
 }

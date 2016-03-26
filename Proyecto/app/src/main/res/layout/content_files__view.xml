@@ -9,7 +9,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.proyecto1.moviles.proyecto.FIles_View"
+    tools:context=".Files_View"
     tools:showIn="@layout/activity_files__view">
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:id="@android:id/list"
+        android:layout_height="wrap_content"></ListView>
 
 </RelativeLayout>

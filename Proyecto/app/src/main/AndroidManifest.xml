@@ -35,7 +35,7 @@
             android:label="@string/title_activity_messages__view"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".FIles_View"
+            android:name=".Files_View"
             android:label="@string/title_activity_files__view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

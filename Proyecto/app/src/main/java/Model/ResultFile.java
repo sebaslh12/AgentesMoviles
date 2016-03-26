@@ -15,7 +15,7 @@ public class ResultFile {
     private String contentType;
     private Integer from;
     private Integer to;
-    private Date data;
+    private String date;
 
     public Integer getId() {
         return id;
@@ -57,11 +57,11 @@ public class ResultFile {
         this.to = to;
     }
 
-    public Date getData() {
-        return data;
+    public String getDate() {
+        return date;
     }
 
-    public void setData(Date data) {
-        this.data = data;
+    public void setDate(String date) {
+        this.date = date;
     }
 }

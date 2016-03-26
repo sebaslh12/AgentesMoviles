@@ -16,11 +16,11 @@ import Model.ResultUser;
 /**
  * Created by Sebas on 24/03/2016.
  */
-public class GetContactsService extends AsyncTask<String, Void, ArrayList<String>> {
+public class GetContactsService extends AsyncTask<String, Void, ArrayList<ResultUser>> {
 
-    public ArrayList<String> doInBackground(String... params) {
+    public ArrayList<ResultUser> doInBackground(String... params) {
         // The connection URL
-        ArrayList<String> data = new ArrayList<String>();
+        ArrayList<ResultUser> data = new ArrayList<ResultUser>();
         String URL = "http://192.168.0.13:8191/rest/contacts/{idUser}";
 
         // Create a new RestTemplate instance
@@ -37,10 +37,11 @@ public class GetContactsService extends AsyncTask<String, Void, ArrayList<String
             GetContacts jsonMapp = new ObjectMapper().readValue(result, GetContacts.class);
 
             ArrayList<ResultUser> list = jsonMapp.getData();
-            for (ResultUser r:  list) {
+            return list;
+            /*for (ResultUser r:  list) {
                 data.add(r.getNombre());
             }
-            return data;
+            return data;*/
         } catch (IOException e) {
             e.printStackTrace();
         }

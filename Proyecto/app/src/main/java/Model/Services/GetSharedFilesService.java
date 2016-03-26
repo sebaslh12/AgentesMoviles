@@ -16,11 +16,11 @@ import Model.ResultFile;
 /**
  * Created by Sebas on 25/03/2016.
  */
-public class GetSharedFilesService extends AsyncTask<String, Void, ArrayList<String>> {
+public class GetSharedFilesService extends AsyncTask<String, Void, GetFiles> {
 
-    public ArrayList<String> doInBackground(String... params) {
+    public GetFiles doInBackground(String... params) {
             // The connection URL
-            ArrayList<String> data = new ArrayList<String>();
+            GetFiles data = new GetFiles();
             String URL = "http://192.168.0.13:8191/rest/shared_files/{from}/{to}";
 
             // Create a new RestTemplate instance
@@ -34,13 +34,13 @@ public class GetSharedFilesService extends AsyncTask<String, Void, ArrayList<Str
             result = "{\"data\":"+ result + "}";
             System.out.println("CONSULTA>>"+result);
             try {
-            GetFiles jsonMapp = new ObjectMapper().readValue(result, GetFiles.class);
-
-            ArrayList<ResultFile> list = jsonMapp.getData();
+                GetFiles jsonMapp = new ObjectMapper().readValue(result, GetFiles.class);
+                return jsonMapp;
+            /*ArrayList<ResultFile> list = jsonMapp.getData();
             for (ResultFile r:  list) {
                 data.add(r.getName());
             }
-            return data;
+            return data;*/
             } catch (IOException e) {
             e.printStackTrace();
             }
