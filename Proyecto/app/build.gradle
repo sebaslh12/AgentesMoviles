@@ -34,4 +34,5 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind:2.7.2'
     compile 'com.fasterxml.jackson.core:jackson-core:2.7.2'
     compile 'com.fasterxml.jackson.core:jackson-annotations:2.7.2'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
 }
