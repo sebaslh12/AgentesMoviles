@@ -10,8 +10,8 @@ import org.springframework.web.client.RestTemplate;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import Model.GetContacts;
-import Model.ResultUser;
+import Model.Classes.GetContacts;
+import Model.Classes.ResultUser;
 
 /**
  * Created by Sebas on 24/03/2016.
@@ -21,7 +21,7 @@ public class GetContactsService extends AsyncTask<String, Void, ArrayList<Result
     public ArrayList<ResultUser> doInBackground(String... params) {
         // The connection URL
         ArrayList<ResultUser> data = new ArrayList<ResultUser>();
-        String URL = "http://192.168.0.10:8191/rest/contacts/{idUser}";
+        String URL = "http://192.168.0.13:8191/rest/contacts/{idUser}";
 
         // Create a new RestTemplate instance
         RestTemplate restTemplate = new RestTemplate();

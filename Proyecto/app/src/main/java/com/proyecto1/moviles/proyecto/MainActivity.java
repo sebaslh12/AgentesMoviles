@@ -1,15 +1,12 @@
 package com.proyecto1.moviles.proyecto;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -17,9 +14,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
-import Model.ResultUser;
+import Model.Classes.ResultUser;
 import Model.Services.GetContactsService;
-import Model.listCustom;
+import Model.Classes.listCustom;
 
 public class MainActivity extends Activity {
 
@@ -28,6 +25,7 @@ public class MainActivity extends Activity {
     Button files;
     Integer[] imagenes = {R.drawable.user};
     ArrayList<ResultUser> consulta;
+    private final String User = "1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +34,13 @@ public class MainActivity extends Activity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         try {
-             consulta = new GetContactsService().execute("3").get();
+             consulta = new GetContactsService().execute(User).get();
             //ArrayAdapter<String> dataArray= new ArrayAdapter<String>(this,R.layout.contact_view, consulta);
             //this.setListAdapter(dataArray);
             ArrayList<String> result = new ArrayList<String>();
-            if(!consulta.isEmpty()){x
+            if(!consulta.isEmpty()){
                 for(ResultUser f : consulta){
-                    result.add(f.getUserName()+"\n"+f.getNombre());
+                    result.add(f.getNombre()+" "+f.getUserName());
                 }
                 listCustom adapter = new listCustom(MainActivity.this, result, imagenes);
                 listaContactos=(ListView)findViewById(R.id.list);
@@ -87,6 +85,7 @@ public class MainActivity extends Activity {
         Intent msgIntent = new Intent(this,Messages_View.class);
         msgIntent.putExtra("idUser", consulta.get(position).getUserId());
         startActivity(msgIntent);
+
     }
 
 

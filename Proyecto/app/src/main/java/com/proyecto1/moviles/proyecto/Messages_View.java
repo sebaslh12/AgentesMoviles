@@ -3,11 +3,7 @@ package com.proyecto1.moviles.proyecto;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
@@ -15,9 +11,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.concurrent.ExecutionException;
 
-import Model.ResultFile;
 import Model.Services.GetMessagesService;
-import Model.Services.GetSharedFilesService;
 
 public class Messages_View extends ListActivity {
 
@@ -25,6 +19,8 @@ public class Messages_View extends ListActivity {
     private ArrayList<String> msgsEnviados;
     private ArrayList<String> msgsRecibidos;
     private ArrayList<String> conversacion;
+    //Usuario de la sesión
+    private final String User = "1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +34,8 @@ public class Messages_View extends ListActivity {
 
         try {
             //Cambiar el "3" cuando se cambia de usuario que envia los mensajes
-            msgsEnviados = new GetMessagesService().execute("3", idUser.toString()).get();
-            msgsRecibidos = new GetMessagesService().execute(idUser.toString(), "3").get();
+            msgsEnviados = new GetMessagesService().execute(User, idUser.toString()).get();
+            msgsRecibidos = new GetMessagesService().execute(idUser.toString(), User).get();
             Iterator<String> env = msgsEnviados.iterator();
             Iterator<String> rec = msgsRecibidos.iterator();
             conversacion = new ArrayList<String>();

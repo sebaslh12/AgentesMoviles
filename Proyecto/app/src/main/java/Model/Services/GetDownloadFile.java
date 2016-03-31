@@ -1,24 +1,11 @@
 package Model.Services;
 
-import android.content.Context;
-import android.content.ContextWrapper;
-import android.graphics.Bitmap;
 import android.os.AsyncTask;
-import android.provider.MediaStore;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
-
-import Model.GetContacts;
-import Model.ResultUser;
 
 import static android.app.PendingIntent.getActivity;
 

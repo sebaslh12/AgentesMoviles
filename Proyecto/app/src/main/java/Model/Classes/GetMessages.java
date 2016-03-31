@@ -1,4 +1,4 @@
-package Model;
+package Model.Classes;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -8,14 +8,14 @@ import java.util.ArrayList;
  * Created by Sebas on 24/03/2016.
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class GetContacts {
-    private ArrayList<ResultUser> data;
+public class GetMessages {
+    ArrayList<ResultMessages> data;
 
-    public ArrayList<ResultUser> getData() {
+    public ArrayList<ResultMessages> getData() {
         return data;
     }
 
-    public void setData(ArrayList<ResultUser> data) {
+    public void setData(ArrayList<ResultMessages> data) {
         this.data = data;
     }
 }

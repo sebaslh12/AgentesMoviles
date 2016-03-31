@@ -1,4 +1,4 @@
-package Model;
+package Model.Classes;
 
 import android.app.Activity;
 import android.view.LayoutInflater;

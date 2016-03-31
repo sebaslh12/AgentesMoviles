@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:shrinkColumns="*">
-    <TableRow
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:gravity="center_horizontal">
+    android:layout_height="match_parent">
+    <TableRow>
         <ImageView
             android:id="@+id/img"
-            android:layout_weight="1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="left"/>
 
         <TextView
             android:id="@+id/nombre"
-            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
             android:layout_gravity="left"/>
 
         <Button
             android:id="@+id/archivos"
-            android:layout_weight="1"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="right"
             android:onClick="viewFiles"
             android:background="@drawable/arch"/>
 
         <Button
             android:id="@+id/mensajes"
-            android:layout_weight="1"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="right"
             android:onClick="viewMessage"
             android:background="@drawable/message"/>

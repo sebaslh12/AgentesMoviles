@@ -8,10 +8,8 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
-import Model.GetFiles;
-import Model.ResultFile;
+import Model.Classes.GetFiles;
 
 /**
  * Created by Sebas on 25/03/2016.

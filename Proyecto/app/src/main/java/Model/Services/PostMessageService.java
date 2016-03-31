@@ -2,17 +2,12 @@ package Model.Services;
 
 import android.os.AsyncTask;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
-import Model.GetContacts;
-import Model.ResultMessages;
-import Model.ResultUser;
+import Model.Classes.ResultMessages;
 
 /**
  * Created by Sebas on 25/03/2016.
