@@ -40,9 +40,9 @@ public class MainActivity extends Activity {
             //ArrayAdapter<String> dataArray= new ArrayAdapter<String>(this,R.layout.contact_view, consulta);
             //this.setListAdapter(dataArray);
             ArrayList<String> result = new ArrayList<String>();
-            if(!consulta.isEmpty()){
+            if(!consulta.isEmpty()){x
                 for(ResultUser f : consulta){
-                    result.add(f.getNombre()+" "+f.getUserName());
+                    result.add(f.getUserName()+"\n"+f.getNombre());
                 }
                 listCustom adapter = new listCustom(MainActivity.this, result, imagenes);
                 listaContactos=(ListView)findViewById(R.id.list);
@@ -84,8 +84,9 @@ public class MainActivity extends Activity {
     public void viewMessage(View view) {
         View parentRow = (View) view.getParent();
         final int position = listaContactos.getPositionForView(parentRow);
-        Toast.makeText(MainActivity.this, "Escogio "+position , Toast.LENGTH_SHORT).show();
-
+        Intent msgIntent = new Intent(this,Messages_View.class);
+        msgIntent.putExtra("idUser", consulta.get(position).getUserId());
+        startActivity(msgIntent);
     }
 
 

@@ -21,7 +21,7 @@ public class GetContactsService extends AsyncTask<String, Void, ArrayList<Result
     public ArrayList<ResultUser> doInBackground(String... params) {
         // The connection URL
         ArrayList<ResultUser> data = new ArrayList<ResultUser>();
-        String URL = "http://192.168.0.13:8191/rest/contacts/{idUser}";
+        String URL = "http://192.168.0.10:8191/rest/contacts/{idUser}";
 
         // Create a new RestTemplate instance
         RestTemplate restTemplate = new RestTemplate();

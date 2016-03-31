@@ -12,4 +12,9 @@
     tools:context="com.proyecto1.moviles.proyecto.Messages_View"
     tools:showIn="@layout/activity_messages__view">
 
+    <ListView
+        android:layout_width="wrap_content"
+        android:id="@android:id/list"
+        android:layout_height="wrap_content"></ListView>
+
 </RelativeLayout>

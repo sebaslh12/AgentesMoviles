@@ -21,7 +21,7 @@ public class GetMessagesService extends AsyncTask<String, Void, ArrayList<String
     public ArrayList<String> doInBackground(String... params) {
         // The connection URL
         ArrayList<String> data = new ArrayList<String>();
-        String URL = "http://192.168.0.13:8191/rest/messages/{from}/{to}";
+        String URL = "http://192.168.0.10:8191/rest/messages/{from}/{to}";
 
         // Create a new RestTemplate instance
         RestTemplate restTemplate = new RestTemplate();
@@ -30,6 +30,7 @@ public class GetMessagesService extends AsyncTask<String, Void, ArrayList<String
         restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
 
         // Make the HTTP GET request, marshaling the response to a String
+        System.out.println("PARAMS>>"+params[0]+" "+params[1]);
         String result = restTemplate.getForObject(URL, String.class, params[0],params[1]);
         result = "{\"data\":"+ result + "}";
         System.out.println("CONSULTA>>"+result);
