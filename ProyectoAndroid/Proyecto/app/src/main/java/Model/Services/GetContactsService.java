@@ -22,6 +22,7 @@ public class GetContactsService extends AsyncTask<String, Void, ArrayList<Result
         // The connection URL
         ArrayList<ResultUser> data = new ArrayList<ResultUser>();
         String URL = "http://192.168.0.13:8191/rest/contacts/{idUser}";
+        //String URL = "http://10.0.2.2:8191/rest/files/{from}/{to}";
 
         // Create a new RestTemplate instance
         RestTemplate restTemplate = new RestTemplate();

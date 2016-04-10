@@ -22,6 +22,7 @@ public class GetMessagesService extends AsyncTask<String, Void, ArrayList<String
         // The connection URL
         ArrayList<String> data = new ArrayList<String>();
         String URL = "http://192.168.0.13:8191/rest/messages/{from}/{to}";
+        //String URL = "http://10.0.2.2:8191/rest/files/{from}/{to}";
 
         // Create a new RestTemplate instance
         RestTemplate restTemplate = new RestTemplate();
