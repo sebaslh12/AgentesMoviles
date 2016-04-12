@@ -55,7 +55,7 @@ public class Files_View extends ListActivity {
                 for (ResultFile f : files.getData()) {
                     consulta.add("Archivo: " + f.getName() + " " + f.getDate());
                 }
-                ArrayAdapter<String> dataArray = new ArrayAdapter<String>(this, R.layout.contact_view, consulta);
+                ArrayAdapter<String> dataArray = new ArrayAdapter<String>(this, R.layout.msg_view, consulta);
                 this.setListAdapter(dataArray);
             } else {
                 Toast.makeText(Files_View.this, "Esta persona no ha compartido archivos con usted.", Toast.LENGTH_SHORT).show();

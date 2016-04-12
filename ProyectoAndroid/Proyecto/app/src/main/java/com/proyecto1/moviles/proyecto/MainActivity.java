@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 
         try {
              consulta = new GetContactsService().execute(User).get();
-            //ArrayAdapter<String> dataArray= new ArrayAdapter<String>(this,R.layout.contact_view, consulta);
+            //ArrayAdapter<String> dataArray= new ArrayAdapter<String>(this,R.layout.msg_view, consulta);
             //this.setListAdapter(dataArray);
             ArrayList<String> result = new ArrayList<String>();
             if(!consulta.isEmpty()){
@@ -84,6 +84,7 @@ public class MainActivity extends Activity {
         final int position = listaContactos.getPositionForView(parentRow);
         Intent msgIntent = new Intent(this,Messages_View.class);
         msgIntent.putExtra("idUser", consulta.get(position).getUserId());
+        msgIntent.putExtra("nameUser",consulta.get(position).getUserName());
         startActivity(msgIntent);
 
     }
