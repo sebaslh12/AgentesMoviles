@@ -61,11 +61,9 @@ public class MessageDB extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery(query, new String[]{from, to});
         ArrayList<String> queryResult= new ArrayList<>();
         if(cursor.moveToFirst()) {
-            cursor.moveToFirst();
             queryResult.add(cursor.getString(3));
 
             while (cursor.moveToNext()) {
-                cursor.moveToNext();
                 queryResult.add(cursor.getString(3));
             }
             cursor.close();
