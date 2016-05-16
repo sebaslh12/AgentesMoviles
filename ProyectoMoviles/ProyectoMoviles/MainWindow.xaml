@@ -1,0 +1,30 @@
+﻿<Window x:Class="ProyectoMoviles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoMoviles"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <UniformGrid>
+        <ItemsControl ItemsSource="{Binding Contacts}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical"></StackPanel>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding nombre}"/>
+                        <TextBlock Text="{Binding userName}"/>
+                        <Button CommandParameter="{Binding}" Command="{Binding MessageC}"> Mensajes
+                        </Button>
+                        <Button CommandParameter="{Binding}" Command="{Binding FilesC}">Archivos
+                        </Button>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </UniformGrid>
+</Window>
