@@ -5,26 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoMoviles"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <UniformGrid>
-        <ItemsControl ItemsSource="{Binding Contacts}">
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <StackPanel Orientation="Vertical"></StackPanel>
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding nombre}"/>
-                        <TextBlock Text="{Binding userName}"/>
-                        <Button CommandParameter="{Binding}" Command="{Binding MessageC}"> Mensajes
-                        </Button>
-                        <Button CommandParameter="{Binding}" Command="{Binding FilesC}">Archivos
-                        </Button>
-                    </StackPanel>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
-    </UniformGrid>
+        Title="Chat App" Height="350" Width="525">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" HorizontalAlignment="Center">Contactos</Label>
+        <ScrollViewer Grid.Row="1">
+            <ItemsControl ItemsSource="{Binding Contacts}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Vertical"></StackPanel>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <!--<ListBox Width="470"> -->
+                        <Border BorderThickness="0 0 0 0.2" BorderBrush="Black">
+                            <Grid HorizontalAlignment="Stretch" Margin="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="user.png" Height="30" Grid.Column="0" HorizontalAlignment="Left"/>
+                                <TextBlock Text="{Binding nombre}" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding userName}" Grid.Column="2"  VerticalAlignment="Center"/>
+                            <Button CommandParameter="{Binding}" Command="{Binding MessageC}" Grid.Column="3" HorizontalAlignment="Right" >Mensajes
+                            </Button>
+                            <Button CommandParameter="{Binding}" Command="{Binding FilesC}" Grid.Column="4" HorizontalAlignment="Right">Archivos
+                            </Button>
+                        </Grid>
+                        </Border>
+                        <!-- </ListBox> -->
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
 </Window>
