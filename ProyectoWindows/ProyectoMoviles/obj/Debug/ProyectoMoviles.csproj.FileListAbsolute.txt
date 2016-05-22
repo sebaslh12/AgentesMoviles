@@ -1,0 +1,91 @@
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.csproj.App.config
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.csprojResolveAssemblyReference.cache
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\MainWindow.g.cs
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Files.g.cs
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Messages.g.cs
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\App.g.cs
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles_MarkupCompile.cache
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles_MarkupCompile.lref
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\ProyectoMoviles.exe.config
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\ProyectoMoviles.exe
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\ProyectoMoviles.pdb
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\Newtonsoft.Json.dll
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Extensions.dll
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Formatting.dll
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Primitives.dll
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\Newtonsoft.Json.xml
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Extensions.xml
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Formatting.xml
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Primitives.xml
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\MainWindow.baml
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Files.baml
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Messages.baml
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.g.resources
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.Properties.Resources.resources
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.csproj.GenerateResource.Cache
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.exe
+c:\users\sebas\documents\visual studio 2015\Projects\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.pdb
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\ProyectoMoviles.exe.config
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.exe
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.pdb
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\ProyectoMoviles.exe
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\ProyectoMoviles.pdb
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\Newtonsoft.Json.dll
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\Newtonsoft.Json.xml
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.csproj.App.config
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.csprojResolveAssemblyReference.cache
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\MainWindow.g.cs
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Files.g.cs
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Messages.g.cs
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\App.g.cs
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles_MarkupCompile.cache
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles_MarkupCompile.lref
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\MainWindow.baml
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Files.baml
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Messages.baml
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.g.resources
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.Properties.Resources.resources
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.csproj.GenerateResource.Cache
+C:\Users\felipe\Documents\Repos\AgentesMoviles - Sebastian\AgentesMoviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\App.baml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\ProyectoMoviles.exe.config
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\ProyectoMoviles.exe
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\ProyectoMoviles.pdb
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\EntityFramework.dll
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Data.SQLite.dll
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\EntityFramework.xml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Data.SQLite.xml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.csproj.App.config
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.csprojResolveAssemblyReference.cache
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\MainWindow.g.cs
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Files.g.cs
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Messages.g.cs
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\App.g.cs
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles_MarkupCompile.cache
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles_MarkupCompile.lref
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\App.baml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\MainWindow.baml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Files.baml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\Views\Messages.baml
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.g.resources
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.Properties.Resources.resources
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.csproj.GenerateResource.Cache
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.exe
+C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\obj\Debug\ProyectoMoviles.pdb
