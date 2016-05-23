@@ -98,7 +98,11 @@
     <Compile Include="Model\AppMoviles.cs" />
     <Compile Include="Model\Contact.cs" />
     <Compile Include="Model\DB.cs" />
+    <Compile Include="Model\DownloadFile.cs" />
+    <Compile Include="Model\File.cs" />
+    <Compile Include="Model\FilesApp.cs" />
     <Compile Include="Model\FilesPageCommand.cs" />
+    <Compile Include="Model\INotifyPropertyChange.cs" />
     <Compile Include="Model\Message.cs" />
     <Compile Include="Model\MessageApp.cs" />
     <Compile Include="Model\MessagesPageCommand.cs" />

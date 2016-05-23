@@ -1,10 +1,13 @@
-﻿using ProyectoMoviles.Views;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace ProyectoMoviles.Model
 {
-    public class FilesPageCommand : ICommand
+    public class DownloadFile : ICommand
     {
         public event EventHandler CanExecuteChanged;
 
@@ -15,10 +18,8 @@ namespace ProyectoMoviles.Model
 
         public void Execute(object parameter)
         {
-            Contact c = (Contact)parameter;
-            Files FilesPage = new Files(c);
-            App.Current.MainWindow = FilesPage;
-            FilesPage.Show();
+            File f = (File)parameter;
+            ServicesConsume.DownloadFile(f.id, f.name);
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using ProyectoMoviles.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,11 +22,20 @@ namespace ProyectoMoviles.Views
     public partial class Files : Window
     {
         private int UserId { get; set; }
-        public Files(int ID)
+        private FilesApp FilesContext { get; set; }
+        public Files(Contact c)
         {
-            UserId = ID;
+            FilesContext = new FilesApp(c.userId,c.userName);
+            UserId = c.userId;
+            this.DataContext = FilesContext;
             InitializeComponent();
-            InitializeComponent();
+        }
+
+        private void OpenFile(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                ServicesConsume.PostFile(openFileDialog.FileName, this.UserId);
         }
     }
 }
