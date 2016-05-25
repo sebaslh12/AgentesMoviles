@@ -49,5 +49,9 @@ namespace ProyectoMoviles.Views
             }
 
         }
+
+        private void refresh(object sender, RoutedEventArgs e) {
+            MessagesContext.insertMessages(ServicesConsume.GetMessages(this.UserId));
+        }
     }
 }

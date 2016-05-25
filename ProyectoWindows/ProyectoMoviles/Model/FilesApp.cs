@@ -14,14 +14,12 @@ namespace ProyectoMoviles.Model
         private List<File> _Files{ get; set; }
         public string Name { get; set; }
         public int ID;
-        public List<File> Files
-        {
+        public List<File> Files{
             get { return _Files; }
             set
             {
                 _Files = value;
-                if (PropertyChanged != null)
-                {
+                if (PropertyChanged != null){
                     PropertyChanged(this, new PropertyChangedEventArgs("Files"));
                 }
             }
@@ -34,5 +32,9 @@ namespace ProyectoMoviles.Model
             this.Files = ServicesConsume.GetFiles(id);
         }
 
+        public void updateFiles(int id)
+        {
+            this.Files = ServicesConsume.GetFiles(id);
+        }
     }
 }

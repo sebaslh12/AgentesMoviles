@@ -35,7 +35,10 @@ namespace ProyectoMoviles.Views
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
-                ServicesConsume.PostFile(openFileDialog.FileName, this.UserId);
+                if(ServicesConsume.PostFile(openFileDialog.FileName, this.UserId))
+                {
+                    FilesContext.updateFiles(this.UserId);
+                }            
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.IO;
+using RestSharp;
 
 namespace ProyectoMoviles.Model
 {
@@ -31,7 +32,7 @@ namespace ProyectoMoviles.Model
                 return failed;
             }
         }
-
+        #region Messages
         public static List<Message> GetMessages(int userId)
         {
             string url = "http://localhost:8191/";
@@ -63,7 +64,8 @@ namespace ProyectoMoviles.Model
             client.PostAsJsonAsync("rest/messages/",mtemp).ContinueWith((postTask) => postTask.Result.EnsureSuccessStatusCode());
 
         }
-
+        #endregion
+        #region Files
         public static List<File> GetFiles(int userID) {
             string url = "http://localhost:8191/";
             HttpClient client = new HttpClient();
@@ -71,7 +73,7 @@ namespace ProyectoMoviles.Model
             client.DefaultRequestHeaders.Accept.Add(
                new MediaTypeWithQualityHeaderValue("application/json"));
 
-            HttpResponseMessage response = client.GetAsync("rest/shared_files/" + userID.ToString() + "/3").Result;
+            HttpResponseMessage response = client.GetAsync("rest/shared_files/3/" + userID.ToString()).Result;
             if (response.IsSuccessStatusCode)
             {
                 var Files = response.Content.ReadAsAsync<IEnumerable<File>>().Result;
@@ -88,59 +90,28 @@ namespace ProyectoMoviles.Model
         {
             using (var client = new WebClient())
             {
-                client.DownloadFile("http://localhost:8191/rest/files"+id.ToString(), name);
+                client.DownloadFile("http://localhost:8191/rest/files/"+id.ToString(), name);
             }
         }
-        public static void PostFile(string Path, int id)
+        public static bool PostFile(string Path, int id)
         {
-            //var formContent = new FormUrlEncodedContent(new[]
-            //{
-            //    new KeyValuePair<string, string>("file", Path)
-            //});
-
-            //var myHttpClient = new HttpClient();
-            //var response = myHttpClient.PostAsync("http://localhost:8191/rest/files/1" + id.ToString(), formContent);
-
-            WebRequest webRequest = WebRequest.Create(new Uri("http://localhost:8191/rest/files/1" + id.ToString()));
-
-            webRequest.ContentType = "application/x-www-form-urlencoded";
-            webRequest.Method = "PUT";
-            byte[] bytes = Encoding.ASCII.GetBytes(Path);
-
-            Stream os = null;
-            try
-            { // send the Post
-                webRequest.ContentLength = bytes.Length;   //Count bytes to send
-                os = webRequest.GetRequestStream();
-                os.Write(bytes, 0, bytes.Length);         //Send it
-            }
-            catch (WebException ex)
+            var client = new RestClient("http://localhost:8191");
+            var upload = new RestRequest("rest/files/3/" + id.ToString(), Method.POST);
+            bool rest = false;
+            upload.AddFile("file", Path);
+            var result = client.ExecuteAsync(upload, (response) =>
             {
-
-            }
-            finally
-            {
-                if (os != null)
+                if (response.StatusCode == HttpStatusCode.OK)
                 {
-                    os.Close();
+                    rest = true;
                 }
-            }
-
-            try
-            { // get the response
-                WebResponse webResponse = webRequest.GetResponse();
-
-                StreamReader sr = new StreamReader(webResponse.GetResponseStream());
-            }
-            catch (WebException ex)
-            {
-            }
-
-            //string url = "http://localhost:8191/";
-            //HttpClient client = new HttpClient();
-            //client.BaseAddress = new Uri(url);
-            //client.PostAsJsonAsync("/rest/files/1" + id.ToString(), Path).ContinueWith((postTask) => postTask.Result.EnsureSuccessStatusCode());
-
-        }
+                else
+                {
+                    rest = false;
+                }
+            });
+            return rest;
+        }    
     }
+    #endregion
 }

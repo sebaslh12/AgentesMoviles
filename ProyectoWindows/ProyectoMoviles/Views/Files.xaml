@@ -5,38 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoMoviles.Views"
         mc:Ignorable="d"
-        Title="Files" Height="300" Width="300">
-    <StackPanel Orientation="Vertical">
-        <ScrollViewer Grid.Row="1">
-            <ItemsControl ItemsSource="{Binding Files}">
-                <ItemsControl.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <StackPanel Orientation="Vertical">
-                        </StackPanel>                    
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Border BorderThickness="0 0 0 0.2" BorderBrush="Black">
-                            <Grid HorizontalAlignment="Stretch" Margin="5">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="120"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <TextBlock Text="{Binding name}" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                                <TextBlock Text="{Binding date}" Grid.Column="2"  VerticalAlignment="Center"/>                            
-                                <Button CommandParameter="{Binding}" Command="{Binding FilesD}" Grid.Column="4" HorizontalAlignment="Right">Descargar
-                                </Button>
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </ScrollViewer>
-        <Button Click="OpenFile">Escoger Archivo</Button>
-    </StackPanel>
-
-
+        Title="Files" Height="300" Width="520">
+    <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+            <ScrollViewer Grid.Row="1">
+                <ItemsControl ItemsSource="{Binding Files}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Vertical">
+                            </StackPanel>                    
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderThickness="0 0 0 0.2" BorderBrush="Black">
+                                <Grid HorizontalAlignment="Stretch" Margin="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="120"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding name}" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding date}" Grid.Column="2"  VerticalAlignment="Center"/>                <Button CommandParameter="{Binding}"  Command="{Binding FileD}" Grid.Column="4" HorizontalAlignment="Right">Descargar
+                                    </Button>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+            <Button Click="OpenFile">Escoger Archivo</Button>
+        </StackPanel>
+    </ScrollViewer>
 </Window>

@@ -10,7 +10,7 @@ namespace ProyectoMoviles.Model
     public static class DB
     {        
         //DB connection, static is the same in the entire app
-        private static SQLiteConnection dbcon = new SQLiteConnection(@"Data Source=C:\Users\Sebas\Documents\U\Moviles\ProyectoMoviles\ProyectoMoviles\bin\Debug\Messages.db");
+        private static SQLiteConnection dbcon = new SQLiteConnection(@"Data Source=C:\Users\Sebas\Desktop\Messages.db");
 
         public static void createTable() {
             //SQLiteCommand create = new SQLiteCommand("CREATE TABLE IF NOT EXISTS Message_Table(id INTEGER PRIMARY KEY autoincrement, to INTEGER, from INTEGER, text TEXT)", dbcon);

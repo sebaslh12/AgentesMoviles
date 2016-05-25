@@ -6,10 +6,13 @@
         xmlns:local="clr-namespace:ProyectoMoviles.Views"
         mc:Ignorable="d"
         Title="Messages" Height="300" Width="300">
-    <StackPanel Orientation="Vertical">
-        <ListView ItemsSource="{Binding Messages}" Margin="10" > 
-        </ListView>
-        <TextBox Name="MBody" VerticalAlignment="Bottom"></TextBox>
-        <Button VerticalAlignment="Bottom" Click="SendMessage">Enviar</Button>
-    </StackPanel>
+    <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+            <ListView ItemsSource="{Binding Messages}" Margin="10" > 
+            </ListView>
+            <TextBox Name="MBody" VerticalAlignment="Bottom"></TextBox>
+            <Button VerticalAlignment="Bottom" Click="SendMessage">Enviar</Button>
+            <Button VerticalAlignment="Bottom" Click="refresh">Actualizar</Button>
+        </StackPanel>
+    </ScrollViewer>
 </Window>
