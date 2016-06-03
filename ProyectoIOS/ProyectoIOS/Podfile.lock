@@ -1,0 +1,18 @@
+PODS:
+  - JSONHelper (1.7.0)
+  - RestEssentials (1.0.1)
+  - SQLite.swift (0.10.1)
+
+DEPENDENCIES:
+  - JSONHelper (~> 1.7)
+  - RestEssentials (~> 1.0)
+  - SQLite.swift (~> 0.10)
+
+SPEC CHECKSUMS:
+  JSONHelper: b71808273ac60fb9e1878eb115370b0faac14a81
+  RestEssentials: 8e89f45c7258e966e4f1228c07a45b090e82f4fc
+  SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
+
+PODFILE CHECKSUM: 93a5a75514c7fe138893c58dcc662dffca2a3c0a
+
+COCOAPODS: 1.0.0
