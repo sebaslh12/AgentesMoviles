@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSONHelper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Restofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SQLite.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>090FAE9E11C2FF5D04E95AFC128AC2DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>15F8566D5ECFDF6E38A4F36D526F7744</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>24FB1BB0AB4B68388EB65B09AB3B9A67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>804A97CCB6A50F5DECF941592E5E0AF2</key>
+		<key>364EA48D0B882B6EE31E6B36DB0BF463</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A627A9BA850AB7E00BCD054BAF3D8AF9</key>
+		<key>69AB7C345B30CA071A8FC294E1706D28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C20A66C2575BE04E9F06B068B154B971</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
