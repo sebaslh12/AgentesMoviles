@@ -1,7 +1,0 @@
-target 'ProyectoIOS' do
-    use_frameworks!
-    pod 'SQLite.swift', '~> 0.10'
-    pod 'JSONHelper', '~> 1.7'
-    pod 'RestEssentials', '~> 1.0'
-    pod 'Restofire', '~> 1.1'
-end
